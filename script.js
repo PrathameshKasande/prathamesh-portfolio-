@@ -1,4 +1,4 @@
-const text = ["Aspiring Data Scientist", "Machine Learning Enthusiast", "Python Developer"];
+const text = ["Aspiring Entry-Level Data Scientist", "Machine Learning Enthusiast", "Python Developer"];
 let i = 0;
 let j = 0;
 let currentText = "";
@@ -6,7 +6,7 @@ let isDeleting = false;
 
 function type() {
     currentText = text[i];
-    
+
     if (!isDeleting) {
         document.querySelector(".typing").textContent = currentText.substring(0, j++);
         if (j > currentText.length) {
@@ -21,6 +21,7 @@ function type() {
             i = (i + 1) % text.length;
         }
     }
+
     setTimeout(type, isDeleting ? 50 : 100);
 }
 
