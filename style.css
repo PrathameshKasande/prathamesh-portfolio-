@@ -20,11 +20,17 @@ nav a {
 
 header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
-header h1 {
-    font-size: 40px;
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 section {
@@ -37,7 +43,7 @@ section {
     display: inline-block;
     background: #1e293b;
     margin: 5px;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 20px;
 }
 
@@ -50,12 +56,13 @@ section {
 }
 
 .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
 }
 
-.card a {
-    color: #38bdf8;
-    text-decoration: none;
+img {
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 footer {
